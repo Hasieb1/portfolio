@@ -208,6 +208,25 @@ section {
     text-align: center;
 }
 
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid #777;
+    white-space: nowrap;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #666 }
+}
+
 #socials-container {
     display: flex;
     justify-content: center;
@@ -348,18 +367,21 @@ section {
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
+    padding: 1rem;
 }
 
 article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
+    justify-content: flex-start;
     gap: 0.5rem;
 }
+
 
 article .icon {
     cursor:default
 }
+
 
 /* Projects */
 
