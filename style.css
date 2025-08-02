@@ -412,6 +412,58 @@ article .icon {
     position: relative;
 }
 
+#interests {
+    position: relative;
+    margin-top: 5rem;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.interest-item {
+    background: var(--bg-light);
+    border: 1px solid var(--accent-color);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.interest-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.interest-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    background: var(--bg-light);
+    border-radius: 50%;
+    border: 1px solid var(--accent-color);
+}
+
+.interest-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.interest-content p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--text-light);
+}
+
 .color-container {
     border-color: var(--accent-color);
     background: var(--bg-light);
@@ -482,7 +534,7 @@ article .icon {
     justify-content: center;
     flex-direction: column;
     height: 70vh;
-
+    margin-top: -16rem;  /* Further reducing space above contact section */
 }
 
 .contact-info-upper-container {
